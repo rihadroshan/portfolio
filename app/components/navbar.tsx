@@ -6,7 +6,7 @@ const Navbar = () => {
           {/* Left side - Your name */}
           <a
             href="#hero"
-            className="text-2xl font-light tracking-wider hover:text-blue-400 transition-colors"
+            className="text-2xl font-light tracking-wider hover:text-violet-400 transition-colors"
           ></a>
 
           {/* Right side - Links */}
@@ -20,7 +20,7 @@ const Navbar = () => {
               {/* <Github className="w-5 h-5" /> */}
               <span className="relative">
                 GitHub
-                <span className="absolute -bottom-1 left-0 w-full h-px bg-blue-400 transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100" />
+                <span className="absolute -bottom-1 left-0 w-full h-px bg-violet-400 transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100" />
               </span>
             </a>
 
@@ -33,7 +33,7 @@ const Navbar = () => {
               {/* <FileText className="w-5 h-5" /> */}
               <span className="relative">
                 Resumé
-                <span className="absolute -bottom-1 left-0 w-full h-px bg-blue-400 transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100" />
+                <span className="absolute -bottom-1 left-0 w-full h-px bg-violet-400 transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100" />
               </span>
             </a>
           </div>

@@ -9,12 +9,14 @@ interface ProjectCardProps {
   description: string;
   tags: string[];
   imageSrc: string;
+  period?: string; // Optional for projects
+  metrics: {
+    [key: string]: string; // Allow any string key with string value
+  };
   links: {
     github?: string;
     live?: string;
-  };
-  metrics: {
-    [key: string]: string;
+    company?: string;
   };
 }
 
@@ -158,3 +160,4 @@ const ProjectCard = ({
 };
 
 export default ProjectCard;
+export type { ProjectCardProps };

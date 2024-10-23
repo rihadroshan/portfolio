@@ -3,7 +3,9 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "./components/navbar";
-import ProjectCard from "./components/project_card";
+import ProjectCard, {
+  ProjectCardProps,
+} from "./components/project_card/project_card";
 import {
   Github,
   ExternalLink,
@@ -379,7 +381,7 @@ const Portfolio = () => {
                     <input
                       type="text"
                       id="name"
-                      className="w-full bg-gray-800/50 rounded-lg border border-gray-700/30 px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                      className="w-full bg-gray-800/50 rounded-lg border border-gray-700/30 px-4 py-3 focus:outline-none focus:border-violet-400 transition-colors"
                       placeholder="Your name"
                     />
                   </div>
@@ -390,7 +392,7 @@ const Portfolio = () => {
                     <input
                       type="email"
                       id="email"
-                      className="w-full bg-gray-800/50 rounded-lg border border-gray-700/30 px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                      className="w-full bg-gray-800/50 rounded-lg border border-gray-700/30 px-4 py-3 focus:outline-none focus:border-violet-400 transition-colors"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -401,13 +403,13 @@ const Portfolio = () => {
                     <textarea
                       id="message"
                       rows={5}
-                      className="w-full bg-gray-800/50 rounded-lg border border-gray-700/30 px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                      className="w-full bg-gray-800/50 rounded-lg border border-gray-700/30 px-4 py-3 focus:outline-none focus:border-violet-400 transition-colors"
                       placeholder="Your message"
                     />
                   </div>
                   <button
                     type="submit"
-                    className="w-full px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg transition-colors"
+                    className="w-full px-6 py-3 bg-violet-400 hover:bg-violet-600 rounded-lg transition-colors"
                   >
                     Send Message
                   </button>
@@ -447,7 +449,7 @@ const Portfolio = () => {
                 <div className="flex space-x-6 pt-4">
                   <a
                     href="#contact"
-                    className="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg transition-colors"
+                    className="px-6 py-3 bg-violet-400 hover:bg-violet-600 rounded-lg transition-colors"
                   >
                     Get in Touch
                   </a>
@@ -477,7 +479,7 @@ const Portfolio = () => {
                           </div>
                           <div className="h-1 bg-gray-800 rounded-full overflow-hidden">
                             <div
-                              className="h-full bg-blue-500 rounded-full transition-all duration-1000 ease-out"
+                              className="h-full bg-violet-400 rounded-full transition-all duration-1000 ease-out"
                               style={{ width: `${skill.level}%` }}
                             />
                           </div>
@@ -494,13 +496,8 @@ const Portfolio = () => {
         {/* Footer */}
         <footer className="border-t border-gray-800/20">
           <div className="max-w-7xl mx-auto px-4 py-8">
-            <div className="flex justify-between items-center">
-              <div className="text-sm text-gray-500">
-                © {new Date().getFullYear()} YourName. All rights reserved.
-              </div>
-              <div className="text-sm text-gray-500">
-                Built with Next.js & Tailwind CSS
-              </div>
+            <div className="text-sm text-gray-500">
+              © {new Date().getFullYear()} Rishi Srihari. All rights reserved.
             </div>
           </div>
         </footer>
