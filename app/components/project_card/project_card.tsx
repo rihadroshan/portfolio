@@ -2,17 +2,19 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Github, Globe } from "lucide-react";
 
+type MetricsType = {
+  [key: string]: string | undefined;
+};
+
 interface ProjectCardProps {
   id: string;
   title: string;
   subtitle: string;
   description: string;
-  tags: string[];
+  tags: readonly string[];
   imageSrc: string;
   period?: string; // Optional for projects
-  metrics: {
-    [key: string]: string; // Allow any string key with string value
-  };
+  metrics: MetricsType;
   links: {
     github?: string;
     live?: string;
@@ -97,15 +99,17 @@ const ProjectCard = ({
             transition={{ duration: 0.5, delay: 0.4 }}
             className="grid grid-cols-3 gap-4 my-6"
           >
-            {Object.entries(metrics).map(([key, value]) => (
-              <div
-                key={key}
-                className="bg-gray-800/30 rounded-lg p-4 border border-gray-700/20"
-              >
-                <div className="text-sm text-gray-400 mb-1">{key}</div>
-                <div className="text-xl font-light">{value}</div>
-              </div>
-            ))}
+            {Object.entries(metrics)
+              .filter(([_, value]) => value !== undefined)
+              .map(([key, value]) => (
+                <div
+                  key={key}
+                  className="bg-gray-800/30 rounded-lg p-4 border border-gray-700/20"
+                >
+                  <div className="text-sm text-gray-400 mb-1">{key}</div>
+                  <div className="text-xl font-light">{value}</div>
+                </div>
+              ))}
           </motion.div>
 
           {/* Tags */}

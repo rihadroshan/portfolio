@@ -39,8 +39,14 @@ const GrainOverlay = () => {
   );
 };
 
-const GradientBlob = ({ position = "top-right" }) => {
-  const positionClasses = {
+type BlobPosition = "top-right" | "top-left" | "bottom-right" | "bottom-left";
+
+const GradientBlob = ({
+  position = "top-right",
+}: {
+  position?: BlobPosition;
+}) => {
+  const positionClasses: Record<BlobPosition, string> = {
     "top-right": "top-0 right-0 translate-x-1/4 -translate-y-1/4",
     "top-left": "top-0 left-0 -translate-x-1/4 -translate-y-1/4",
     "bottom-right": "bottom-0 right-0 translate-x-1/4 translate-y-1/4",
@@ -74,7 +80,7 @@ const Portfolio = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const experiences = [
+  const experiences: Array<ProjectCardProps> = [
     {
       id: "01",
       title: "Opennote Labs",
@@ -134,7 +140,7 @@ const Portfolio = () => {
     },
   ];
 
-  const projects = [
+  const projects: Array<ProjectCardProps> = [
     {
       id: "01",
       title: "Coauthor",
