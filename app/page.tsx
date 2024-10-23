@@ -129,7 +129,7 @@ const Portfolio = () => {
         "Teaching",
         "Curriculum Development",
       ],
-      imageSrc: "/images/experiences/uci.png",
+      imageSrc: "/uci.jpg",
       links: {
         company: "#",
       },
@@ -165,7 +165,7 @@ const Portfolio = () => {
       description:
         "Academic networking platform with AI-powered resume optimization and job matching using Google Cloud Vertex API.",
       tags: ["Next.js", "React", "Google Cloud", "ML/AI", "TypeScript"],
-      imageSrc: "/images/projects/zotconnect.png",
+      imageSrc: "/zotconnect.png",
       links: {
         github: "https://github.com/abhi-arya1/zotconnect",
         live: "https://zotconnect.vercel.app/",
