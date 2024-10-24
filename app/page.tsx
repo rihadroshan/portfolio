@@ -118,11 +118,11 @@ const Portfolio = () => {
     },
     {
       id: "03",
-      title: "UC Irvine",
+      title: "UC Irvine, Donald Bren School of ICS",
       subtitle: "TEACHING ASSISTANT",
       period: "Mar. 2024 - Present",
       description:
-        "Teaching Assistant for Boolean Logic and Discrete Structures, delivering curriculum content to 400+ students. Work on lecture and test preparation with course staff.",
+        "Teaching Assistant for Boolean Logic and Discrete Structures, delivering curriculum content to 400+ students. Collaborate on lecture and test content preparation with course staff, and host weekly office hours.",
       tags: [
         "Boolean Logic",
         "Discrete Math",
@@ -143,10 +143,25 @@ const Portfolio = () => {
   const projects: Array<ProjectCardProps> = [
     {
       id: "01",
+      title: "Sift",
+      subtitle: "Supercharged Semantic Search",
+      description:
+        "Simultaneously search files in your filesystem, GitHub, Notion, Slack, Discord, and the Google Suite, simply with natural language. ",
+      tags: ["Tauri", "React", "Rust", "Multimodal Embeddings", "Python"],
+      imageSrc: "/sift.png",
+      links: {
+        github: "https://github.com/abhi-arya1/sift",
+      },
+      metrics: {
+        "supported concurrent users": "500+",
+      },
+    },
+    {
+      id: "02",
       title: "Coauthor",
       subtitle: "SFHACKS '24 WINNER",
       description:
-        "RAG-based research collaboration platform handling 500+ workspaces. AI-powered academic source searching with cloud-based data management.",
+        "RAG-based research collaboration platform with academic source searching, using cloud-based data management.",
       tags: ["TypeScript", "WebSocket", "Mistral AI", "GCP", "Selenium"],
       imageSrc: "/coauthor.png",
       links: {
@@ -159,7 +174,7 @@ const Portfolio = () => {
       },
     },
     {
-      id: "02",
+      id: "03",
       title: "ZotConnect",
       subtitle: "IRVINEHACKS '24 WINNER",
       description:
@@ -302,7 +317,7 @@ const Portfolio = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="space-y-4"
+              className="space-y-4 pb-4"
             >
               <div className="mono text-sm text-gray-500 mb-4 tracking-widest">
                 FEATURED PROJECTS
@@ -430,27 +445,36 @@ const Portfolio = () => {
           <GradientBlob position="top-right" />
           <div className="max-w-7xl mx-auto px-4 z-20 relative">
             <div className="mono text-sm text-gray-500 mb-4 tracking-widest">
-              ABOUT ME
+              A BIT ABOUT ME
             </div>
             <h2 className="text-4xl md:text-5xl font-extralight mb-16 tracking-tight">
-              Crafting Digital
-              <br />
-              Experiences
+              WHO I AM
             </h2>
 
             <div className="grid md:grid-cols-2 gap-16">
               <div className="space-y-6">
                 <p className="text-gray-400 text-lg">
-                  I'm a full-stack developer with a passion for building
-                  beautiful, functional, and scalable web applications. With
-                  expertise in modern web technologies and a keen eye for
-                  design, I create solutions that not only work flawlessly but
-                  also provide exceptional user experiences.
+                  I'm a full-stack developer with a drive for building
+                  beautiful, functional, and scalable web applications. I love
+                  to jump into projects and learn from those around me to refine
+                  my skills as a student and developer.
                 </p>
                 <p className="text-gray-400 text-lg">
-                  My approach combines technical excellence with creative
-                  problem-solving, ensuring that every project I tackle is built
-                  with scalability, performance, and user satisfaction in mind.
+                  Apart from my work, I'm a huge runner and love to explore new
+                  genres of music, so feel free to reach out and send me your
+                  favorite songs or talk about running (check out my{" "}
+                  <a
+                    href="https://www.strava.com/athletes/rishi_srihari"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center group text-violet-300 hover:text-white transition-colors relative px-1"
+                  >
+                    <span className="relative">
+                      Strava
+                      <span className="absolute -bottom-1 left-0 w-full h-px bg-violet-400 transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100" />
+                    </span>
+                  </a>{" "}
+                  if you're curious)!
                 </p>
                 <div className="flex space-x-6 pt-4">
                   <a
@@ -460,7 +484,7 @@ const Portfolio = () => {
                     Get in Touch
                   </a>
                   <a
-                    href="/resume.pdf"
+                    href="/Rishi_Srihari_Resume.pdf"
                     className="px-6 py-3 border border-gray-700 hover:border-gray-600 rounded-lg transition-colors"
                   >
                     Download CV
