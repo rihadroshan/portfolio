@@ -147,13 +147,20 @@ const Portfolio = () => {
       subtitle: "Supercharged Semantic Search",
       description:
         "Simultaneously search files in your filesystem, GitHub, Notion, Slack, Discord, and the Google Suite, simply with natural language. ",
-      tags: ["Tauri", "React", "Rust", "Multimodal Embeddings", "Python"],
+      tags: [
+        "Tauri",
+        "React",
+        "Rust",
+        "Multimodal Vector Embeddings",
+        "Python",
+      ],
       imageSrc: "/sift.png",
       links: {
         github: "https://github.com/abhi-arya1/sift",
       },
       metrics: {
-        "supported concurrent users": "500+",
+        "supported document base": "200,000+",
+        "search speed": "< 1s",
       },
     },
     {
@@ -195,28 +202,28 @@ const Portfolio = () => {
     {
       category: "Frontend Development",
       items: [
-        { name: "React/Next.js", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Tailwind CSS", level: 95 },
-        { name: "Three.js", level: 85 },
+        { name: "React/Next.js", level: "3-4 years" },
+        { name: "TypeScript", level: "3 years" },
+        { name: "Tailwind CSS", level: "3 years" },
+        { name: "Tauri", level: "< 1 year" },
       ],
     },
     {
       category: "Backend Development",
       items: [
-        { name: "Node.js", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "PostgreSQL", level: 88 },
-        { name: "Redis", level: 85 },
+        { name: "Node.js", level: "4 years" },
+        { name: "Python", level: "5 years" },
+        { name: "PostgreSQL", level: "2 years" },
+        { name: "SQL", level: "2 years" },
       ],
     },
     {
       category: "DevOps & Tools",
       items: [
-        { name: "Docker", level: 85 },
-        { name: "AWS", level: 80 },
-        { name: "CI/CD", level: 88 },
-        { name: "Git", level: 92 },
+        { name: "Docker", level: "1 year" },
+        { name: "AWS", level: "1 year" },
+        { name: "CI/CD", level: "4 years" },
+        { name: "Git", level: "4+ years" },
       ],
     },
   ];
@@ -492,7 +499,7 @@ const Portfolio = () => {
                 </div>
               </div>
 
-              <div className="space-y-12">
+              {/* <div className="space-y-12">
                 {skills.map((skillGroup) => (
                   <div key={skillGroup.category} className="space-y-4">
                     <h3 className="text-xl font-light tracking-tight">
@@ -503,9 +510,7 @@ const Portfolio = () => {
                         <div key={skill.name} className="space-y-2">
                           <div className="flex justify-between text-sm">
                             <span className="text-gray-300">{skill.name}</span>
-                            <span className="text-gray-500">
-                              {skill.level}%
-                            </span>
+                            <span className="text-gray-500">{skill.level}</span>
                           </div>
                           <div className="h-1 bg-gray-800 rounded-full overflow-hidden">
                             <div
@@ -518,7 +523,7 @@ const Portfolio = () => {
                     </div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
