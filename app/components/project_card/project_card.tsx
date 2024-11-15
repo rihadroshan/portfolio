@@ -52,7 +52,7 @@ const ProjectCard = ({
                     shadow-[0_0_15px_rgba(0,0,0,0.1)]"
       >
         {/* Project image container */}
-        <div className="relative w-full aspect-[16/9] rounded-t-lg overflow-hidden">
+        <div className="relative w-full aspect-[16/9] overflow-hidden">
           {/* Browser-like toolbar */}
           <div className="absolute top-0 left-0 right-0 h-8 bg-gray-900/90 backdrop-blur-md flex items-center px-4 gap-2 z-10">
             <div className="flex gap-1.5">
@@ -70,7 +70,7 @@ const ProjectCard = ({
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
             src={imageSrc}
             alt={`${title} preview`}
-            className="w-full h-full object-cover object-center mt-8 rounded-lg"
+            className="w-full h-full object-cover object-center mt-8"
           />
         </div>
 

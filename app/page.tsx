@@ -89,7 +89,7 @@ const Portfolio = () => {
       description:
         "The world's first text-to-animatiom platform built specifically for students and educators, rendering narrated animations from handwritten/typed notes. Lead frontend and integration development while overseeing business operations.",
       tags: ["Python", "React", "TypeScript", "ML/AI"],
-      imageSrc: "/opennote_proj.png",
+      imageSrc: "/opennote.png",
       links: {
         live: "https://opennote.me",
       },
