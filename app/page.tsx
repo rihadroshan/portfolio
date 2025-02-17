@@ -87,15 +87,15 @@ const Portfolio = () => {
       subtitle: "CO-FOUNDER & FULL STACK ENGINEER",
       period: "Apr. 2024 - Present",
       description:
-        "The world's first text-to-animatiom platform built specifically for students and educators, rendering narrated animations from handwritten/typed notes. Lead frontend and integration development while overseeing business operations.",
+        "The world's first interactive, text-to-animation platform built specifically for students and educators, rendering narrated animations from handwritten/typed notes. 23,000+ users in 2 weeks. VC-backed.",
       tags: ["Python", "React", "TypeScript", "ML/AI"],
       imageSrc: "/opennote.png",
       links: {
         live: "https://opennote.me",
       },
       metrics: {
-        "animation content accuracy": "95%",
-        "launch week users": "300+",
+        "Audience Reached": "2.6M+",
+        "launch week users": "23,000+",
       },
     },
     {
