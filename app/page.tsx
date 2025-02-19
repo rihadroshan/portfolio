@@ -83,19 +83,19 @@ const Portfolio = () => {
   const experiences: Array<ProjectCardProps> = [
     {
       id: "01",
-      title: "Opennote Labs",
+      title: "Opennote",
       subtitle: "CO-FOUNDER & FULL STACK ENGINEER",
       period: "Apr. 2024 - Present",
       description:
-        "The world's first interactive, text-to-animation platform built specifically for students and educators, rendering narrated animations from handwritten/typed notes. 23,000+ users in 2 weeks. VC-backed.",
+        "The world's premier interactive, text-to-animation platform built specifically for students, rendering narrated animations from handwritten/typed notes. 23,000+ users in 2 weeks. VC-backed.",
       tags: ["Python", "React", "TypeScript", "ML/AI"],
       imageSrc: "/opennote.png",
       links: {
         live: "https://opennote.me",
       },
       metrics: {
-        "Audience Reached": "2.6M+",
-        "launch week users": "23,000+",
+        "audience reached": "2.6M+",
+        "launch week users": "25,000+",
       },
     },
     {
@@ -142,7 +142,23 @@ const Portfolio = () => {
 
   const projects: Array<ProjectCardProps> = [
     {
-      id: "01",
+    id: "01",
+    title: "Runway",
+    subtitle: "Vercel for AI Models",
+    description:
+        "Generate full LoRA datasets, train any model on H100 GPUs, and deploy—to our sandbox, an OpenAI API SDK endpoint to request, or download the weights to deploy yourself. All using natural language.",
+    tags: ["Perplexity", "Websocket", "Browserbase/Stagehand", "ML/AI", "Next.js"],
+    imageSrc: "/runway.png",
+    links: {
+        github: "https://github.com/abhi-arya1/runway",
+        live: "https://runway0.vercel.app/",
+    },
+    metrics: {
+        "audience reached": "10,000+",
+    },
+      },
+    {
+      id: "02",
       title: "Sift",
       subtitle: "Supercharged Semantic Search",
       description:
@@ -164,7 +180,7 @@ const Portfolio = () => {
       },
     },
     {
-      id: "02",
+      id: "03",
       title: "Coauthor",
       subtitle: "SFHACKS '24 WINNER",
       description:
@@ -181,7 +197,7 @@ const Portfolio = () => {
       },
     },
     {
-      id: "03",
+      id: "04",
       title: "ZotConnect",
       subtitle: "IRVINEHACKS '24 WINNER",
       description:
@@ -230,7 +246,6 @@ const Portfolio = () => {
 
   return (
     <div className="relative min-h-screen bg-zinc-950 text-gray-100 overflow-hidden">
-      {/* Base texture */}
       <div
         className="fixed inset-0 z-0 opacity-50"
         style={{
@@ -240,16 +255,12 @@ const Portfolio = () => {
         }}
       />
 
-      {/* Moving grain overlay */}
       <GrainOverlay />
 
       <Navbar />
 
-      {/* Content wrapper with additional contrast */}
       <div className="relative z-10 min-h-screen backdrop-contrast-110 backdrop-brightness-95">
-        {/* Previous navigation code */}
 
-        {/* Hero Section */}
         <section className="relative min-h-screen flex items-center overflow-hidden">
           <div
             className="absolute inset-0 z-0"
@@ -270,7 +281,7 @@ const Portfolio = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="mono text-sm text-gray-500 mb-4 tracking-widest"
             >
-              CREATING REFINED DIGITAL EXPERIENCES
+              PUSHING THE BOUNDARIES OF DIGITAL EXPERIENCES
             </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -286,8 +297,8 @@ const Portfolio = () => {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="text-gray-400 text-xl md:text-2xl max-w-2xl mb-8 font-light"
             >
-              I develop high-performance full-stack projects with modern
-              technologies and clean architecture.
+              I love to build impactful full-stack projects with modern
+              technologies and high-performance.
             </motion.p>
           </motion.div>
         </section>
@@ -342,7 +353,6 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* Contact Section */}
         <section id="contact" className="relative min-h-screen py-32">
           <GradientBlob position="bottom-right" />
           <div className="max-w-7xl mx-auto px-4 z-20 relative">
@@ -366,10 +376,10 @@ const Portfolio = () => {
                     <div>
                       <div className="text-sm text-gray-500">Email</div>
                       <a
-                        href="mailto:sriharihrishikesh@gmail.com"
+                        href="mailto:rishi@opennote.me"
                         className="text-lg hover:text-slate-400 transition-colors"
                       >
-                        sriharihrishikesh@gmail.com
+                          rishi@opennote.me
                       </a>
                     </div>
                   </div>
@@ -447,7 +457,6 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* About/Skills Section */}
         <section id="about" className="relative min-h-screen py-32">
           <GradientBlob position="top-right" />
           <div className="max-w-7xl mx-auto px-4 z-20 relative">
@@ -528,7 +537,6 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* Footer */}
         <footer className="border-t border-gray-800/20">
           <div className="max-w-7xl mx-auto px-4 py-8">
             <div className="text-sm text-gray-500">
