@@ -117,7 +117,7 @@ const Portfolio = () => {
       },
       metrics: {
         "Attack Simulation Coverage": "50+ MITRE ATT&CK techniques",
-        "Response Time": "< 5s",
+        "Response Time": "< 1s",
       },
     },
     {
