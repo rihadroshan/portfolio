@@ -309,8 +309,8 @@ const Portfolio = () => {
             <div className="grid md:grid-cols-2 gap-16">
               <div className="space-y-6">
                 <p className="text-gray-400 text-lg">
-                I'm a cybersecurity researcher focused on defensive security, building secure solutions, developing threat detection systems,
-                and simulating attacks. Always learning and exploring new technologies to stay ahead of emerging threats.
+                I’m a cybersecurity researcher bridging defense and offense, 
+                building secure systems, detecting threats, and simulating attacks to outpace emerging risks. Always exploring new technologies to stay ahead in the cyber battlefield.
                 </p>
 
                 <div className="flex space-x-6 pt-4">
