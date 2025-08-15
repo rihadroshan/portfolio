@@ -290,8 +290,8 @@ const Portfolio = () => {
                     <Github size={24} />
                   </a>
                 </div>
-            </div>
-          </div>
+                </div
+                  </div>
         </section>
 
         {/* About/Skills Section */}
