@@ -271,15 +271,7 @@ const Portfolio = () => {
                 </div>
 
                 <div className="flex space-x-6">
-                  <a
-                  href="https://github.com/rihadroshan"
-                  className="text-gray-400 hover:text-white transition-colors"
-                  aria-label="GitHub Profile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                    <Github size={24} />
-                    </a>
+                  </a>
                     <a
                     href="https://linkedin.com/in/rihadroshan"
                     className="text-gray-400 hover:text-white transition-colors"
@@ -288,7 +280,15 @@ const Portfolio = () => {
                     rel="noopener noreferrer"
                     >
                       <Linkedin size={24} />
+                    <a
+                    href="https://github.com/rihadroshan"
+                    className="text-gray-400 hover:text-white transition-colors"
+                    aria-label="GitHub Profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
                       </a>
+                    <Github size={24} />
                       </div>
               </div>
             </div>
