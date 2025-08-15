@@ -269,31 +269,33 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </div>
-               
+
                 <div className="flex space-x-6">
                   <a
+                  href="https://github.com/rihadroshan"
+                  className="text-gray-400 hover:text-white transition-colors"
+                  aria-label="GitHub Profile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                    <Github size={24} />
+                    </a>
+                    <a
                     href="https://linkedin.com/in/rihadroshan"
                     className="text-gray-400 hover:text-white transition-colors"
                     aria-label="LinkedIn Profile"
                     target="_blank"
                     rel="noopener noreferrer"
-                  >
-                    <Linkedin size={24} />
-                  </a>
-                  <a
-                    href="https://github.com/"
-                    className="text-gray-400 hover:text-white transition-colors"
-                    aria-label="GitHub Profile"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                   <Github size={24} />
-                  </a>
-                </div>
-              </div
-                </div>
-          </section>
+                    >
+                      <Linkedin size={24} />
+                      </a>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        {/* About/Skills Section */}
         <section id="about" className="relative min-h-screen py-32">
           <GradientBlob position="top-right" />
           <div className="max-w-7xl mx-auto px-4 z-20 relative">
