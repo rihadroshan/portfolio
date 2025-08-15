@@ -269,7 +269,7 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </div>
-
+               
                 <div className="flex space-x-6">
                   <a
                     href="https://linkedin.com/in/rihadroshan"
@@ -277,7 +277,7 @@ const Portfolio = () => {
                     aria-label="LinkedIn Profile"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >
+                  >
                     <Linkedin size={24} />
                   </a>
                   <a
@@ -286,15 +286,14 @@ const Portfolio = () => {
                     aria-label="GitHub Profile"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >
-                    <Github size={24} />
+                  >
+                   <Github size={24} />
                   </a>
                 </div>
-                </div
-                  </div>
-        </section>
+              </div
+                </div>
+          </section>
 
-        {/* About/Skills Section */}
         <section id="about" className="relative min-h-screen py-32">
           <GradientBlob position="top-right" />
           <div className="max-w-7xl mx-auto px-4 z-20 relative">
