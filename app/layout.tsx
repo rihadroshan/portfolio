@@ -5,7 +5,7 @@ import { JetBrains_Mono } from "next/font/google";
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rihad Roshan's Portfolio",
+  title: "Rihad Roshan",
 };
 
 export default function RootLayout({
