@@ -82,7 +82,7 @@ const Portfolio = () => {
   const projects: Array<ProjectCardProps> = [
     {
       id: "01",
-      title: "SOAR-EDR Playbook",
+      title: "SOAR EDR Automation",
       subtitle: "SOAR-EDR Security Automated Threat Detection & Response",
       description:
         `An automated security orchestration, automation, and response (SOAR) solution integrated with LimaCharlie, Tines, Slack, and Email. 
@@ -93,7 +93,7 @@ const Portfolio = () => {
       ],
       imageSrc: "/diagram.png",
       links: {
-        github: "https://github.com/rihadroshan/SOAR-EDR-Playbook",
+        github: "https://github.com/rihadroshan/SOAR-EDR-Automation",
       },
       metrics: {
         "Threat Detection Accuracy": "98.7%",
