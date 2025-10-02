@@ -89,7 +89,7 @@ const Portfolio = () => {
          This playbook automates threat detection, alerts, and machine isolation 
          reducing manual intervention and accelerating incident response.`,
       tags: [
-        "LimaCharlie","Tines","Slack"
+        "LimaCharlie","Tines","Slack", "E-mail"
       ],
       imageSrc: "/diagram.png",
       links: {
