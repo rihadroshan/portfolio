@@ -136,7 +136,7 @@ const Portfolio = () => {
         github: "https://github.com/rihadroshan/ssh-honeypot",
       },
       metrics: {
-        "Authentication Logging Response Time": "< 100ms",
+        "Authentication Logging Response Time": "< 1s",
         "Customizable Parameters": "Username, password, port",
       },
     },
