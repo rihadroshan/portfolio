@@ -97,7 +97,7 @@ const Portfolio = () => {
       },
       metrics: {
         "Threat Detection Accuracy": "98.7%",
-        "Incident Response Time": "< 0.5ms",
+        "Response Time": "< 0.5ms",
       },
     },
     {
